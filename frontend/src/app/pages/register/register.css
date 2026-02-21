@@ -1,0 +1,17 @@
+:host{
+  --primary-color: #ede6e6;
+  --secondary-color: #156874;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card{
+  background-color: var(--secondary-color);
+  width: 20rem;
+  height: 20rem;
+}

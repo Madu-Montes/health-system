@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card">
+    <h2>Create Account</h2>
+
+    <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+      <input type="text" placeholder="Name" name="name" [(ngModel)]="formData.name" required />
+
+      <input type="email" placeholder="Email" name="email" [(ngModel)]="formData.email" required />
+
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        [(ngModel)]="formData.password"
+        required
+      />
+    </form>
+
+    <button type="submit">Register</button>
+  </div>
+</div>
